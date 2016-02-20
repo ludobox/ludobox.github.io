@@ -1,0 +1,127 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting",
+        "src/milligram"
+;
+
+#landing {
+  width: 100%;
+  height: 100%;
+
+  h1 {
+    font-size: 5em;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  background: url("/uploads/ludobox.jpg") no-repeat center center fixed;
+  background-size: 80%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  #curtains {
+	  position: fixed;
+	  height: 100%;
+	  width: 100%;
+	  background: rgba(0,0,0,.3) url("/uploads/curtains.png") repeat top left;
+	  z-index: -1;
+	}
+
+  color: white;
+
+  header {
+    padding-top: 2em;
+    text-align: center;
+  }
+
+  a.ludobox-logo {
+    background: url("/uploads/logo_ludobox.png") no-repeat center center;
+    background-size: 100%;
+    display:block;
+    height:300px;
+    width:300px;
+    margin: 0 auto;
+
+    /* Hide the text. */
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .logo {
+    text-align: center;
+    a.dcalk {
+      background: url("/uploads/dcalk_logo_small.png") no-repeat center center;
+      background-size: 100%;
+      display:block;
+      height:100px;
+      width:100px;
+      margin: 0 auto;
+
+      /* Hide the text. */
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+
+  #license {
+	  padding-top: 1em;
+	  text-align: center;
+	  font-size: .9em;
+	}
+}
