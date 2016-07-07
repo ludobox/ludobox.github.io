@@ -8,7 +8,7 @@
 # Site settings
 title: Ludobox
 email: your-email@domain.com
-description: "DIGITAL TOY LIBRARY : an offline device to share games released under free licenses"
+description: "LUDOBOCHE : an offline device to share games released under free licenses"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://ludobox.net" # the base hostname & protocol for your site
 twitter_username: asso_dcalk
