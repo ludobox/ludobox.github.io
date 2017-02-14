@@ -7,7 +7,7 @@
 
 # Site settings
 title: Ludobox
-email: your-email@domain.com
+email: hello@ludobox.net
 description: "Une ludothèque de poche pour partager des jeux sous licence libre, les fabriquer soi-même et jouer."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://ludobox.net" # the base hostname & protocol for your site
