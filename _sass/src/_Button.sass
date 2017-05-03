@@ -1,6 +1,12 @@
 
 // Button
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
+a.button
+	text-decoration: none
+
+a.button:visited
+	color: $color-initial	
+
 
 .button,
 button,
@@ -28,7 +34,7 @@ input[type='submit']
 	&:focus
 		background-color: $color-secondary
 		border-color: $color-secondary
-		color: $color-initial
+		color: $color-primary
 		outline: 0
 
 	&.button-disabled,
