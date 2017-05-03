@@ -1,29 +1,51 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
   <body id="landing" >
-  <div id="curtains"></div>
-  <main class="wrapper">
-    <section class="container">
-      <header>
-        <p>
-          <a class="ludobox-logo" href="https://leschiensdelenfer.org/la-ludobox/ludobox-fr/">Ludobox</a>
-        </p>
-        <h1>{{ site.title }}</h1>
-        <h5>{{ site.description }}</h5>
-        <p class="logo">
-          <a class="dcalk" href="https://leschiensdelenfer.org/">DCALK</a>
-          <!--<a id="license" rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/p/zero/1.0/80x15.png" /></a>-->
-        </p>
-
+    <main>
+      <section id="intro">
+        <header>
+          <h1 class="ludobox-logo logo" >
+            Ludobox
+          </h1>
+          <h3 class="punchline logo">
+            Print, Craft, Play
+          </h3>
+        </header>
+      </section>
+      <section id="description">
+        <div class="container">
+          <h5>
+            <!-- {{ site.description }} -->
+            Ludobox is a public library that displays dozens of games from different cities and countries (board, card games…): PRINT freely & PLAY passionately, from 7 to (1)77 years-old! Kinda
+          </h5>
         </div>
-      </header>
-    </section>
-  </main>
-
-
-
+      </section>
+      <img src="/uploads/ludobox-box-web.jpg" alt="Ludobox Box Image">
+      <section id="download">
+        <div class="container">
+          <p>
+            As an open network, Ludobox gathers not only players but also Cultural Mediators, Game Designers, Web Developers,Translators, and anyone that wants to help spread playfulness in his/her city district.
+          </p>
+        </div>
+        {% include download.html %}
+      </section>
+      <img src="/uploads/ludobox-event-play-web.jpg" alt="Ludobox Box Image">
+      <section id="map">
+        <h3>Join The Network</h3>
+        <div class="container">
+          <p>
+            There is actually X ludoboxes.
+          </p>
+        </div>
+        {% include map.html %}
+      </section>
+      <section class="container" id="team">
+        {% include team.html %}
+      </section>
+      <section class="container" id="contact">
+        {% include contact.html %}
+      </section>
+    </main>
   </body>
-
 </html>
