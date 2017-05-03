@@ -4,10 +4,6 @@
 a.button
 	text-decoration: none
 
-a.button:visited
-	color: $color-initial	
-
-
 .button,
 button,
 input[type='button'],
@@ -36,6 +32,11 @@ input[type='submit']
 		border-color: $color-secondary
 		color: $color-primary
 		outline: 0
+
+	&:visited
+		color: $color-initial
+		&:hover
+			color: $color-primary
 
 	&.button-disabled,
 	&[disabled]
