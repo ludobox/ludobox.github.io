@@ -182,7 +182,6 @@ img.full-width-image {
 
 #map {
   text-align: center;
-  padding-bottom: 2em;
   h3 {
     margin-top: 1em;
   }
@@ -193,9 +192,9 @@ img.full-width-image {
     font-size: .8em
   }
   #ludobox-map {
-    margin: 0 auto;
+    margin: 3em auto 0 0;
     width : 100%;
-    height: 500px;
+    height: 600px;
   }
 }
 
