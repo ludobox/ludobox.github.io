@@ -17,6 +17,9 @@
     "title" : "Join The Network",
     "text" : "Everyone is welcome to grow the collection through games design, remix and translation, to develop the device, mediate a workshop or organize an event in his or her own district !"
   },
+  "events" : {
+    "title": "Upcoming Events"
+  },
   "contact" : {
     "title" : "Get in Touch",
     "line1" : "Interested in installing a Ludobox ? ",

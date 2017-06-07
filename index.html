@@ -173,6 +173,8 @@
         $('#map h3').html( i18next.t('map.title') );
         $('#map .text').html( i18next.t('map.text') );
 
+        $('#events h3').html( i18next.t('events.title') );
+
         $('#contact .title').html( i18next.t('contact.title') );
         $('#contact .line1').html( i18next.t('contact.line1') );
         $('#contact .line2').html( i18next.t('contact.line2') );
@@ -195,10 +197,7 @@
       var now = new Date()
       $("#events li").each(function(i, li){
         var t = $(li).find("time").attr("datetime")
-        console.log(Date.parse(t) < now)
-        if(Date.parse(t) < now) {
-          $(li).css({ "color" : "#CCC" })
-        }
+        if(Date.parse(t) < now)  $(li).css({ "color" : "#CCC" })
       })
 
   }) // end jQuery
