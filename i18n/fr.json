@@ -1,0 +1,28 @@
+{
+  "description" : "FR - Ludobox is an electronic device that distributes games in Print'n Play format (as digital files) into the public space. It contains dozens of files and instructions to make your own games and turns a Rasperry Pi into a pocket games library.",
+  "mainButton" : "Voir la collection",
+  "make" : {
+    "main" : "FR - Print'n play are games that you can make by yourself.",
+    "line1" : "FR - From a card game in PDF using a printer and scissors",
+    "line2" : "FR - to a board game accessing a 3D printer to reproduce tokens,",
+    "line3" : "FR - Ludobox invites to materialize & craft digital files."
+  },
+  "download" : {
+    "title" : "FR - Make your own box",
+    "line1" : "FR - You can build your own box from scratch",
+    "line2" : "FR - or directly download games from our online collection.",
+    "button" : "FR- Create your own box"
+  },
+  "map" : {
+    "title" : "FR - Join The Network",
+    "text" : "FR - Everyone is welcome to grow the collection through games design, remix and translation, to develop the device, mediate a workshop or organize an event in his or her own district !"
+  },
+  "contact" : {
+    "title" : "FR - Get in Touch",
+    "line1" : "FR - Interested in installing a Ludobox ? ",
+    "line2" : "FR - Organizing a game festival ?",
+    "line3" : "FR - Experimenting with collaboration and games? ",
+    "line4" : "FR - Inventing or publishing open-source games? ",
+    "contact" : "FR - Contact us at :"
+  }
+}
