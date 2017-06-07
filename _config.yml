@@ -17,3 +17,10 @@ github_username:  ludobox
 
 # Build settings
 markdown: kramdown
+
+
+collections:
+    events:
+        output: true
+
+future: true

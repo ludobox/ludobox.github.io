@@ -74,12 +74,15 @@
       <section id="map">
         <h3>Join The Network</h3>
         <div class="container">
-          <h5>
+          <h5 class="text">
             Everyone is welcome to grow the collection through games design, remix and translation, to develop the device, mediate a workshop or organize an event in his or her own district !
           </h5>
           <!-- <a href="#" class="button">Add your box</a> -->
         </div>
-        {% include map.html %}
+        
+        {% include events.html %}
+
+
       </section>
       <img class="full-width-image" src="/uploads/ludobox-workshop-kids.jpg" alt="Ludobox Kids Workshop">
       <section id="contact" class="container" >
@@ -167,7 +170,7 @@
         $('#download a').text( i18next.t('download.button') );
 
         $('#map h3').html( i18next.t('map.title') );
-        $('#map h5').html( i18next.t('map.text') );
+        $('#map .text').html( i18next.t('map.text') );
 
         $('#contact .title').html( i18next.t('contact.title') );
         $('#contact .line1').html( i18next.t('contact.line1') );
