@@ -55,9 +55,68 @@ $on-laptop:        800px;
 
 
 #menu {
+
   position: fixed;
   top : 1em;
   right: 1em;
+
+  input.toggle, label.toggle {
+    display: none;
+  }
+
+  nav {
+    position: relative;
+
+    .menu-trigger {
+      font-size: 1em;
+      margin:0
+    }
+
+    &:hover ul {
+      display: block;
+    }
+
+    ul {
+      display: none;
+      top: 100%;
+      left: 0;
+      margin: 0;
+      list-style: none;
+
+      li {
+        margin:0
+      }
+
+      a {
+        padding: 12px 12px;
+        background-color: $brand-secondary-color;
+        text-decoration: none;
+        display: block;
+        &:hover {
+          background: $brand-color
+        }
+      }
+    }
+  }
+
+  @media (max-width: 960px) {
+    // position: relative;
+    // width: 80%;
+    // top: 0;
+    // right: 0;
+    // margin: 1em;
+    .menu-trigger { display: none; }
+    nav { display: none; }
+    input.toggle,  .toggle span { display: none; }
+    input[type=checkbox]:checked ~ nav,  label.toggle {
+      display: block;
+      cursor: pointer;
+      ul {
+        display :block
+      }
+    }
+  }
+
   select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -221,7 +280,7 @@ img.full-width-image {
 }
 
 #events {
-  font-size: 1.2em; 
+  font-size: 1.2em;
   ul {
     margin: 4em 0;
     text-align: left;
