@@ -53,6 +53,22 @@ $on-laptop:        800px;
         "src/milligram"
 ;
 
+
+#menu {
+  position: fixed;
+  top : 1em;
+  right: 1em;
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    &:focus {
+      border: 0.1rem solid #d1d1d1;
+    }
+  }
+}
+
 h1 {
     font-family: $title-font-family;
     font-size: 150px;

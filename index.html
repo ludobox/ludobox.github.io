@@ -1,8 +1,195 @@
 ---
-layout: landing
 ---
 
-<div class="container">
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body id="landing" >
+    <main>
+      <div id="menu">
+        <select name="languageSelector" id="languageSelector">
+          <option value="en">English</option>
+          <option value="fr">Français</option>
+        </select>
+      </div>
+
+      <section id="intro">
+        <header>
+          <h1 class="ludobox-logo logo" >
+            Ludobox
+          </h1>
+          <h3 class="punchline logo">
+            Print, Craft, Play
+          </h3>
+          <p class="browse-collection">
+            <a href="http://box.ludobox.net" target="_blank" class="button button-primary">Browse Games</a>
+          </p>
+        </header>
+
+      </section>
+      <section id="description">
+        <div class="container">
+          <h5>
+            Ludobox is an electronic device that distributes games in Print'n Play format (as
+            digital files) into the public space. It contains dozens of files and
+            instructions to make your own games and turns a Rasperry Pi into a
+            pocket games library.
+          </h5>
+        </div>
+      </section>
+      <section id="make">
+        <img class="punchline" src="/img/ludobox-punchline1.png" alt="Punchline">
+        <h5>
+          <span class="main">Print'n play are games that you can make by yourself.</span>
+          <br>
+          <small>
+            <span class="line1">From a card game in PDF using a printer and scissors</span>
+            <br>
+            <span class="line2">to a board game accessing a 3D printer to reproduce tokens,</span>
+            <br>
+            <span class="line3">Ludobox invites to materialize & craft digital files.</span>
+          </small>
+        </h5>
+        <img class="fab" src="/img/fablab_machinescfao2.png" alt="">
+      </section>
+      <img class="full-width-image" src="/uploads/ludobox-box-web.jpg" alt="Ludobox Box Image">
+      <section id="download">
+        <h3 class="title">Make your own Box</h3>
+        <div class="container">
+          <h5>
+            <span class='line1'>
+              You can build your own box from scratch
+            </span>
+            <br>
+            <span class="line2">
+              or directly download games from our online collection.
+            </span>
+          </h5>
+        </div>
+        <p>
+          <a href="https://hackmd.io/s/Skje3bygW" class="button" target="_blank">Create your own Box</a>
+        </p>
+      </section>
+      <img class="full-width-image" src="/uploads/ludobox-event-play-web.jpg" alt="Ludobox Box Image">
+      <section id="map">
+        <h3>Join The Network</h3>
+        <div class="container">
+          <h5>
+            Everyone is welcome to grow the collection through games design, remix and translation, to develop the device, mediate a workshop or organize an event in his or her own district !
+          </h5>
+          <!-- <a href="#" class="button">Add your box</a> -->
+        </div>
+        {% include map.html %}
+      </section>
+      <img class="full-width-image" src="/uploads/ludobox-workshop-kids.jpg" alt="Ludobox Kids Workshop">
+      <section id="contact" class="container" >
+        <h3>Get in Touch</h3>
+        <h5>
+          <span class="line1">Interested in installing a Ludobox ?</span>
+          <br>
+          <span class="line2">Organizing a game festival ?</span>
+          <br>
+          <span class="line3">Experimenting with collaboration and games?</span>
+          <br>
+          <span class="line4">Inventing or publishing open-source games?</span>
+          <br>
+          <br>
+          <span id="contact-text">Contact us at :</span> <a href="mailto:contact@ludobox.net">contact@ludobox.net</a>
+        </h5>
+        {% include social.html %}
+      </section>
+      <img class="full-width-image" src="/uploads/ludobox-public-event.jpg" alt="Ludobox Public Event">
+      <section id="team">
+        <div class="container">
+          <p>Powered by <a href="http://dcalk.org" target="_blank">DCALK</a>
+            <br>
+            {% include logos/cc.html %}
+          </p>
+        </div>
+      <!--
+        {% include team.html %}
+      -->
+      </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/i18next/i18next.js"></script>
+
+    <script type="text/javascript">
+
+    $(document).ready(function () {
+      console.log("ready");
+
+      getLanguageData("en", function(en) {
+        getLanguageData("fr", function(fr) {
+          initI18n(en, fr)
+        })
+      })
+
+      function getLanguageData(lgCode, callback) {
+        console.log(lgCode);
+        $.getJSON("/i18n/" + lgCode + ".json", null, function(lgData) {
+          callback(lgData);
+        })
+        .fail(function(jqXHR, textStatus, err) { throw err })
+      }
+
+      function initI18n(enTranslation, frTranslation) {
+          console.log(enTranslation, frTranslation);
+
+          i18next.init({
+            lng: 'en',
+            debug: true,
+            resources: {
+              en : { translation : enTranslation },
+              fr : { translation : frTranslation }
+              }
+          }, function(err, t) {
+            if(err) throw(err)
+            // init set content
+            updateContent();
+          });
+      }
+
+      $('select').on('change', function() {
+        i18next.changeLanguage(this.value);
+      })
+
+      function updateContent() {
+        console.log(i18next.t('description'));
+        $('#description h5').html( i18next.t('description') );
+
+        $('.browse-collection a').text( i18next.t('mainButton') );
+
+        $('#make .main').html( i18next.t('make.main') );
+        $('#make .line1').html( i18next.t('make.line1') );
+        $('#make .line2').html( i18next.t('make.line2') );
+        $('#make .line3').html( i18next.t('make.line3') );
+
+        $('#download h3').html( i18next.t('download.title') );
+        $('#download .line1').html( i18next.t('download.line1') );
+        $('#download .line2').html( i18next.t('download.line2') );
+        $('#download a').text( i18next.t('download.button') );
+
+        $('#map h3').html( i18next.t('map.title') );
+        $('#map h5').html( i18next.t('map.text') );
+
+        $('#contact .title').html( i18next.t('contact.title') );
+        $('#contact .line1').html( i18next.t('contact.line1') );
+        $('#contact .line2').html( i18next.t('contact.line2') );
+        $('#contact .line3').html( i18next.t('contact.line3') );
+        $('#contact .line4').html( i18next.t('contact.line3') );
+        $('#contact-text').html( i18next.t('contact.contact') );
+
+      }
 
 
-</div>
+      i18next.on('languageChanged', () => {
+        updateContent();
+      });
+
+  })
+
+    </script>
+  </body>
+</html>
