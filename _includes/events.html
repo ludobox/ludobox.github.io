@@ -1,14 +1,16 @@
-{% assign curDate = site.time | date: '%s' %}
-{% assign secondsInMonth = 2629746 %}
-
-<h5>EVENTS</h5>
-<ul id="events">
-{% for post in site.events reversed %}
-    <li>
-      {{post.date | date: '%B %d, %Y' }} - {{post.place}}, {{post.city}}
-      <a href="{{post.url}}">
-          {{post.title}}
-        </a>
-      </li>
-{% endfor %}
-</ul>
+<div class="container">
+  <ul>
+  {% for post in site.events reversed %}
+      <li>
+        <p>
+          <strong>{{post.title}}</strong>
+          <br>
+          <small>
+            <time datetime="{{post.date}}">{{post.date | date: '%B %d, %Y' }}</time>
+          </small>
+          - {{post.place}}, {{post.city}}
+        </p>
+        </li>
+  {% endfor %}
+  </ul>
+</div>

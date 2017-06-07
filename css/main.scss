@@ -220,6 +220,18 @@ img.full-width-image {
   }
 }
 
+#events {
+  font-size: 1.2em; 
+  ul {
+    margin: 4em 0;
+    text-align: left;
+    list-style: none;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+
+  }
+}
 #contact {
   padding: 4em;
   text-align: center;
