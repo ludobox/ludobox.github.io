@@ -24,5 +24,9 @@
     "line3" : "FR - Experimenting with collaboration and games? ",
     "line4" : "FR - Inventing or publishing open-source games? ",
     "contact" : "FR - Contact us at :"
+  },
+  "footer" : {
+    "support" : "Avec le soutien de",
+    "powered" : " Propulsé par"
   }
 }

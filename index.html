@@ -100,16 +100,11 @@
       </section>
       <img class="full-width-image" src="/uploads/ludobox-public-event.jpg" alt="Ludobox Public Event">
       <section id="team">
-        <div class="container">
-          <p>Powered by <a href="http://dcalk.org" target="_blank">DCALK</a>
-            <br>
-            {% include logos/cc.html %}
-          </p>
-        </div>
       <!--
         {% include team.html %}
       -->
       </section>
+      {% include footer.html %}
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js" charset="utf-8"></script>
@@ -180,6 +175,9 @@
         $('#contact .line3').html( i18next.t('contact.line3') );
         $('#contact .line4').html( i18next.t('contact.line3') );
         $('#contact-text').html( i18next.t('contact.contact') );
+
+        $('footer .support').text( i18next.t('footer.support') );
+        $('footer .powered').text( i18next.t('footer.powered') );
 
       }
 

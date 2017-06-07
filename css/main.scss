@@ -225,14 +225,27 @@ img.full-width-image {
   text-align: center;
 }
 
-#team {
+footer {
   padding: 1em;
   background:$brand-color;
   text-align: center;
   color: white;
   font-size: 1.5em;
+
+
   a, a:visited {
     color: $brand-secondary-color
+  }
+
+  #logos {
+    text-align: center;
+    li {
+      display: inline-block;
+      padding-right: 2em
+    }
+    img {
+      height: 3em
+    }
   }
 }
 

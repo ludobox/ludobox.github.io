@@ -1,22 +1,44 @@
 <footer class="site-footer">
 
-  <div class="wrapper">
+  <p class="support">With the support :</p>
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+  <ul id="logos">
+    <li>
+      <a href="http://www.institutfrancais.com">
+        <img src="/uploads/logos/250px-Institut-francais.png" />
+      </a>
+    </li>
+    <li>
+      <a href="http://www.culturalfoundation.eu">
+        <img src="/uploads/logos/European-Culture-Fondation-@-Laculture.info_.png" />
+      </a>
+    </li>
+    <li>
+      <a href="https://www.helloasso.com/associations/la-fabrique-d-usages-numeriques">
+        <img src="/uploads/logos/la-fabrique-d-usages-numeriques.png" />
+      </a>
+    </li>
+    <li>
+      <a href="http://www.culturecommunication.gouv.fr">
+        <img src="/uploads/logos/logo mcc.jpg" />
+      </a>
+    </li>
+    <li>
+      <a href="http://www.museecarteajouer.com/">
+        <img src="/uploads/logos/logo-musée-Issy.png" />
+      </a>
+    </li>
+    <li>
+      <a href="http://www.makery.info">
+        <img src="/uploads/logos/makery_logo_white.png" />
+      </a>
+    </li>
+  </ul>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
-
+  <div class="container">
+    <p><span class="powered">Powered by</span> <a href="http://dcalk.org" target="_blank">DCALK</a>
+      <br>
+      {% include logos/cc.html %}
+    </p>
   </div>
-
 </footer>
