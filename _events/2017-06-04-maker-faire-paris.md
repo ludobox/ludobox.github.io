@@ -1,6 +1,6 @@
 ---
 title: "DEMO LUDOBOX : Stand à la Maker Faire Paris"
 city: "Paris"
-place: "Maker Faire Paris"
-url:
+place: " Cité des Sciences"
+url: "http://paris.makerfaire.com/"
 ---
