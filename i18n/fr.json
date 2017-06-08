@@ -1,9 +1,9 @@
 {
-  "description" : "Ludobox est une collection de jeux et de ressources autour du Print'n Play (jeux à façonner soi-même).  Elle regroupe des dizaines de fichiers, instructions, tutoriels pour créer et fabriquer vos jeux, seul ou à plusieurs. La collection Ludobox est distribuée en ligne ou en présentiel grâce à une boîte à outils et des ateliers dédiés",
+  "description" : "Ludobox est une collection de jeux et de ressources autour du Print'n Play (jeux à façonner soi-même).  Elle regroupe des dizaines de fichiers, instructions, tutoriels pour créer et fabriquer vos jeux, seul ou à plusieurs. La collection Ludobox est distribuée en ligne ou en présentiel grâce à une boîte à outils et des ateliers dédiés.",
   "mainButton" : "Voir la collection",
   "make" : {
-    "main" : "Le Print'n Play regroupent des jeux sous licence libre à fabriquer soi-même.",
-    "line1" : "Un simple jeu de carte façonné avec du papier et des ciseaux",
+    "main" : "Le Print'n Play regroupe des jeux sous licence libre à fabriquer soi-même.",
+    "line1" : "Un simple jeu de cartes façonné avec du papier et des ciseaux",
     "line2" : "ou un ensemble de pions produits avec une imprimante 3D,",
     "line3" : "Ludobox permet de matérialiser des jeux grâce à des fichiers numériques."
   },
@@ -18,11 +18,11 @@
     "text" : "Vous êtes le/la/les bienvenu-e-s pour prendre part au projet ! Design, remix ou organisation d'un atelier dans votre ville, nous accueillons avec plaisir les volontés de chacun."
   },
   "events" : {
-    "title": "Evènements à venir"
+    "title": "Évènements à venir"
   },
   "contact" : {
     "title" : "Contactez-nous",
-    "line1" : "Intéresser par l'installation d'une Ludobox ?",
+    "line1" : "Intéressé/e/s par l'installation d'une Ludobox ?",
     "line2" : "Vous organisez un festival de jeux ?",
     "line3" : "Vous aimez expérimenter avec les jeux et la collaboration ?",
     "line4" : "Vous inventez ou publiez des jeux open-source ? ",
