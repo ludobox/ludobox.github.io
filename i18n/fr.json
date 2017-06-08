@@ -1,5 +1,5 @@
 {
-  "description" : "FR - Ludobox is an electronic device that distributes games in Print'n Play format (as digital files) into the public space. It contains dozens of files and instructions to make your own games and turns a Rasperry Pi into a pocket games library.",
+  "description" : "Ludobox est une collection de jeux et de ressources autour du Print'n Play (jeux à façonner soi-même).  Elle regroupe des dizaines de fichiers, instructions, tutoriels pour créer et fabriquer vos jeux, seul ou à plusieurs. La collection Ludobox est distribuée en ligne ou en présentiel grâce à une boîte à outils et des ateliers dédiés",
   "mainButton" : "Voir la collection",
   "make" : {
     "main" : "FR - Print'n play are games that you can make by yourself.",
