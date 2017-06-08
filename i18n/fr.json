@@ -2,31 +2,31 @@
   "description" : "Ludobox est une collection de jeux et de ressources autour du Print'n Play (jeux à façonner soi-même).  Elle regroupe des dizaines de fichiers, instructions, tutoriels pour créer et fabriquer vos jeux, seul ou à plusieurs. La collection Ludobox est distribuée en ligne ou en présentiel grâce à une boîte à outils et des ateliers dédiés",
   "mainButton" : "Voir la collection",
   "make" : {
-    "main" : "FR - Print'n play are games that you can make by yourself.",
-    "line1" : "FR - From a card game in PDF using a printer and scissors",
-    "line2" : "FR - to a board game accessing a 3D printer to reproduce tokens,",
-    "line3" : "FR - Ludobox invites to materialize & craft digital files."
+    "main" : "Les jeux Print'n Play sont des jeux sous licences libres à fabriquer soi-même.",
+    "line1" : "Depuis un jeu de carte à fabriquer avec du papier et des ciseaux",
+    "line2" : "à un ensemble de pions à produire avec une imprimante 3D,",
+    "line3" : "Ludobox permet de materialiser et de façonner des jeux grâce à des fichiers numériques."
   },
   "download" : {
-    "title" : "FR - Make your own box",
-    "line1" : "FR - You can build your own box from scratch",
-    "line2" : "FR - or directly download games from our online collection.",
-    "button" : "FR- Create your own box"
+    "title" : "Créer votre propre box",
+    "line1" : "Vous pouvez créer votre propre box",
+    "line2" : "ou télécharger directlement les jeux depuis notre collection en ligne.",
+    "button" : "Créer une box"
   },
   "map" : {
-    "title" : "FR - Join The Network",
-    "text" : "FR - Everyone is welcome to grow the collection through games design, remix and translation, to develop the device, mediate a workshop or organize an event in his or her own district !"
+    "title" : "Rejoigner le réseau",
+    "text" : "Vous êtes le/la/les bienvenu-e-s pour prendre part au projet.  Design, remix ou organisation d'un atelier ou évènement dans votre ville, nous accueillons avec plaisir les volontés de chacun."
   },
   "events" : {
     "title": "Evènements à venir"
   },
   "contact" : {
-    "title" : "FR - Get in Touch",
-    "line1" : "FR - Interested in installing a Ludobox ? ",
-    "line2" : "FR - Organizing a game festival ?",
-    "line3" : "FR - Experimenting with collaboration and games? ",
-    "line4" : "FR - Inventing or publishing open-source games? ",
-    "contact" : "FR - Contact us at :"
+    "title" : "Contactez-nous",
+    "line1" : "Intéresser par l'installation d'une Ludobox ?",
+    "line2" : "Vous organiser un festival de jeux ?",
+    "line3" : "Vous aimez expérimenter avec les jeux et la collaboration ?",
+    "line4" : "Vous inventer ou publier des jeux open-source ? ",
+    "contact" : "Ecrivez-nous à :"
   },
   "footer" : {
     "support" : "Avec le soutien de",
