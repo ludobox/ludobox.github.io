@@ -1,4 +1,5 @@
 ---
-title: "FORUM ENTREPRENDRE DANS LA CULTURE : Table-ronde présentation de la Ludobox"
+title: "FORUM ENTREPRENDRE DANS LA CULTURE"
 city: "Paris"
+url: "http://forumentreprendreculture.culturecommunication.gouv.fr/"
 ---
