@@ -1,9 +1,16 @@
 <div class="container">
   <ul>
   {% for post in site.events reversed %}
+
       <li>
         <p>
+          {% if post.link %}
+            <a href="{{post.link}}" title={{post.title}} target="_blank">
+          {% endif %}
           <strong>{{post.title}}</strong>
+          {% if post.link %}
+            </a>
+          {% endif %}
           <br>
           <small>
             <time datetime="{{post.date}}">{{post.date | date: '%B %d, %Y' }}</time>
