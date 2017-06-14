@@ -210,7 +210,10 @@
       var now = new Date()
       $("#events li").each(function(i, li){
         var t = $(li).find("time").attr("datetime")
-        if(Date.parse(t) < now)  $(li).css({ "color" : "#CCC" })
+        if(Date.parse(t) < now)  {
+          $(li).css({ "color" : "#CCC" })
+          $(li).find("a").css({ "color" : "#CCC" })
+        }
       })
 
   }) // end jQuery

@@ -14,8 +14,8 @@
           <br>
           <small>
             <time datetime="{{post.date}}">{{post.date | date: '%B %d, %Y' }}</time>
+            - {{post.place}}, {{post.city}}
           </small>
-          - {{post.place}}, {{post.city}}
         </p>
         </li>
   {% endfor %}
